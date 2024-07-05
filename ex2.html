@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .hideclass{
+            display: none;
+        }
+    </style>
+
+    <section>
+        <p id="first">This is the first paragraph </p>
+        <p id="second">This is the second paragraph </p>
+        <p id="third">This is the third paragraph </p>
+
+        <button onclick="showpar('first')">show/hide paragraph 1</button>
+        <button onclick="showpar('second')">show/hide paragraph 2</button>
+        <button onclick="showpar('third')">show/hide paragraph 3</button>
+
+        <script>
+            function showpar(elem) // the function get the id of the para...
+            {
+                const selctepara = document.getElementById(elem)
+                console.log (selctepara)
+                console.log (typeof(selctepara))
+
+                selctepara.classList.toggle('hideclass') // add/remove the hide class
+                
+            }
+        </script>
+
+        
+
+        
+    </section>
+    
+</body>
+</html>

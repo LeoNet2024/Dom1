@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    .highlight{background-color: aqua;}
+    .underline{text-decoration: underline;}
+    .bold { font-weight: bold;}
+</style>
+
+<body>
+
+    <p id="text" class="">This is the headline for ex1!</p>
+    <input type="text"  id="classInput">
+    <button onclick="addClass()">Click To Change Class</button>
+    
+</body>
+
+<script>
+    
+    function addClass()
+    {
+        const classput = document.getElementById('classInput').value;
+        console.log(classput)
+        let currentClass = document.getElementById('text');
+
+        currentClass.className = classput; // add the input (class)
+
+    }
+</script>
+
+</html>
